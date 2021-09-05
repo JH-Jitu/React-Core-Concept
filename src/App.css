@@ -4,7 +4,7 @@
 .concept {
   padding: 20px;
   /* border: 1px solid rgb(14, 14, 14); */
-  box-shadow: 1px 1px 15px rgb(64, 51, 128);
+  box-shadow: 1px 1px 15px rgb(42, 32, 85);
   border-radius: 10px;
 }
 
@@ -16,17 +16,25 @@
 
 button {
   padding: 5px 15px;
-  background-color: rgb(64, 51, 128);
+  background-color: rgb(42, 32, 85);
   color: white;
   border-radius: 5px;
   border: none;
   margin: 5px;
 }
+.git {
+  background-color: black;
+}
 
-h3 {
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+h4 {
   color: white;
   text-align: center;
   padding: 5px 15px;
-  background-color: rgb(64, 51, 128);
+  background-color: rgb(42, 32, 85);
   border-radius: 5px;
 }

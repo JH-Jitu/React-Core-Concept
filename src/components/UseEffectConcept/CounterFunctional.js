@@ -27,7 +27,14 @@ const CounterFunctional = () => {
 
   return (
     <div>
-      <h3>useState and useEffect concept</h3>
+      <h4>useState and useEffect concept</h4>
+      <a
+        href="https://github.com/JH-Jitu/React-Core-Concept/tree/react-hook-concept/src/components/UseEffectConcept"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="git"> 🔥Github Link🔥 </button>
+      </a>
       <p>Hello This is functional Component</p>
       <p>Time: {date.toLocaleTimeString()}</p>
       <button onClick={handleCount}>Click here to increment title</button>

@@ -30,7 +30,15 @@ const ReducerComponents = () => {
 
   return (
     <div>
-      <h3>useReducer Concept</h3>
+      <h4>useReducer Concept</h4>
+      <a
+        href="https://github.com/JH-Jitu/React-Core-Concept/tree/react-hook-concept/src/components/UseReducerConcept"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="git"> 🔥Github Link🔥 </button>
+      </a>
+
       <div className="reducer">
         <CounterUseState />
         <CounterUseReducer />

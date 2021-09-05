@@ -28,7 +28,14 @@ const AllCallBackAndMemo = () => {
 
   return (
     <div>
-      <h3>Memo, useCallback and useMemo Tutorial</h3>
+      <h4>Memo, useCallback and useMemo Tutorial</h4>
+      <a
+        href="https://github.com/JH-Jitu/React-Core-Concept/tree/react-hook-concept/src/components/UseMemoAndUseCallbackConcept"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="git"> 🔥Github Link🔥 </button>
+      </a>
       <div>
         <Title />
         <ShowCount count={count1} title="count1" />
