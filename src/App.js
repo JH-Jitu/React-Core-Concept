@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import EmojiComp from "./composition/EmojiComp";
+import TextComp from "./composition/TextComp";
+import Text from "./inhertance/Text";
+import BracketComp from "./composition/BracketComp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Inheritance */}
+      <div>
+        <Text />
+      </div>
+
+      {/* Composition */}
+      <div>
+        <EmojiComp>
+          {({ addEmoji }) => (
+            <BracketComp>
+              {({ addBracket }) => (
+                <TextComp addEmoji={addEmoji} addBracket={addBracket} />
+              )}
+            </BracketComp>
+          )}
+        </EmojiComp>
+      </div>
+
+      <br />
+      {/* Call the Text Component Freely Without the Emoji Component*/}
+      <div>
+        <p>Without Calling the Emoji or Bracket Component: </p>
+        <TextComp />
+      </div>
+    </>
   );
 }
 
